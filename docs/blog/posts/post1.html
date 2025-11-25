@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AxelBase – Selector Specificity Calculator</title>
+    <link rel="icon" href="../../AxelLab-Logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free online CSS Selector Specificity Calculator – instant calculation, comparison, and explanation" />
+    <meta property="og:title" content="CSS Selector Specificity Calculator" />
+    <meta property="og:description" content="Compare multiple selectors, see breakdowns, and share results instantly" />
+    <meta property="og:type" content="website" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    
+		<link href="../../_app/immutable/assets/0.DVBuPPgt.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/4.BTQq11Lt.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.Yl2QAhbn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B5HnHtVh.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/g7nFBF1M.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DXmPUHCk.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DbmA-dRv.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CnXXEkQu.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.DThV7cAe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DyDMaUKT.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/wtmyQNTq.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/gXTTrT31.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DBAEbVpo.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.BKPRJC6C.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B8TJi0RM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BKQ0wovY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/oxtBfwX0.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/3qChC8Zr.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/EeXYOJq5.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/4.CbSQ6a-x.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Chqr_Z16.js"><!--1tq17n3--><meta name="description" content="Learn how browsers decide which CSS rule wins when multiple selectors target the same element. A complete beginner-friendly guide to specificity."/> <meta property="og:title" content="Understanding CSS Selector Specificity"/> <meta property="og:description" content="Discover why some CSS rules override others and how specificity works under the hood in modern browsers."/> <meta property="og:url" content="../../blog/posts/post1"/> <meta property="og:type" content="article"/> <meta name="twitter:card" content="summary_large_image"/><!----><title>Understanding CSS Selector Specificity | Specificity Calculator Blog</title>
+  </head>
+  <body data-bs-theme="light" data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[--><!----><div class="min-vh-100 d-flex flex-column"><header class="fixed-top p-3 w-100" style="pointer-events: none; z-index: 1040;"><nav class="container glass rounded-pill px-4 py-2 d-flex justify-content-between align-items-center shadow-sm" style="pointer-events: auto; max-width: 1300px;"><div class="d-flex align-items-center gap-3"><a href="../../" class="d-flex align-items-center gap-2 text-decoration-none logo-group svelte-12qhfyh"><div class="logo-wrapper svelte-12qhfyh"><img src="../../AxelLab-Logo.ico" alt="Logo" style="height: 35px; width: auto;"/></div> <span class="navbar-brand-text d-none d-sm-inline svelte-12qhfyh">AxelBase</span></a> <div class="position-relative ms-2"><button class="bmac-button" aria-label="Buy me a coffee"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><path d="M12.35,22.2L12,22A10,10,0,0,1,2,12V10A2,2,0,0,1,4,8H7.2A5.13,5.13,0,0,1,12,3A5.13,5.13,0,0,1,16.8,8H20A2,2,0,0,1,22,10V12A10,10,0,0,1,12.35,22.2M4,10V12A8,8,0,0,0,12,20A8,8,0,0,0,20,12V10H16.8A5.11,5.11,0,0,1,12.5,5.12A5.15,5.15,0,0,1,7.2,10H4Z"></path></svg> <span class="d-none d-md-inline">Buy me a coffee</span></button> <!--[!--><!--]--></div></div> <div class="d-flex align-items-center gap-3"><ul style="list-style: none; display: flex; align-items: center; gap: 1.5rem; margin: 0;" class="d-none d-lg-flex"><li><a class="nav-link-custom svelte-12qhfyh" href="../../">Home</a></li> <li><a class="nav-link-custom svelte-12qhfyh" href="../../#about">About</a></li> <li><a class="nav-link-custom svelte-12qhfyh" href="../../#how-to">How to use</a></li> <li><a class="nav-link-custom svelte-12qhfyh" href="../../#faq">FAQ</a></li> <li><a class="nav-link-custom svelte-12qhfyh" href="../../blog">Blog</a></li></ul> <button type="button" class="btn btn-outline-dark border-0 d-flex align-items-center justify-content-center rounded-circle" style="width: 40px; height: 40px;" aria-label="Toggle Dark Mode"><!--[!--><i class="bi bi-moon-stars-fill fs-5"></i><!--]--></button> <button class="d-lg-none btn btn-link text-reset p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-label="Toggle navigation menu" aria-controls="mobileMenu" aria-expanded="false"><i class="bi bi-grid-fill fs-2 text-primary"></i></button></div></nav> <div class="collapse d-lg-none mt-2" id="mobileMenu"><div class="glass rounded-4 p-3 mx-3"><ul class="nav flex-column gap-2 text-center"><li><a class="nav-link p-2" href="../../">Home</a></li> <li><a class="nav-link p-2" href="../../#about">About</a></li> <li><a class="nav-link p-2" href="../../#how-to">How to use</a></li> <li><a class="nav-link p-2" href="../../#faq">FAQ</a></li> <li><a class="nav-link p-2" href="../../blog">Blog</a></li></ul></div></div></header> <main class="flex-grow-1"><!--[--><!----><div class="container fade-in post-layout svelte-1tq17n3"><div class="breadcrumbs svelte-1tq17n3"><a href="../../blog" class="svelte-1tq17n3">Blog</a> <span>/</span> <p class="svelte-1tq17n3">Understanding CSS Selector Specificity</p></div> <article class="prose svelte-1tq17n3"><h1 class="svelte-1tq17n3">Understanding CSS Selector Specificity</h1> <p class="post-meta svelte-1tq17n3">Published: November 25, 2025</p> <p class="lead svelte-1tq17n3">Every time two or more CSS rules apply to the same element, the browser must decide which one wins. This decision is made using <strong>specificity</strong> — one of the most important and often misunderstood concepts in CSS.</p> <h2 class="svelte-1tq17n3">What Is Specificity?</h2> <p class="svelte-1tq17n3">Specificity is a scoring system that determines which CSS declaration gets applied when multiple conflicting rules target the same element. The rule with the highest specificity wins.</p> <h2 class="svelte-1tq17n3">The 0-0-0-0 Scoring System</h2> <p class="svelte-1tq17n3">Specificity is calculated using four columns:</p> <ul class="svelte-1tq17n3"><li class="svelte-1tq17n3"><strong>First column (0-)</strong>: Inline styles (style attribute)</li> <li class="svelte-1tq17n3"><strong>Second column (-0-)</strong>: ID selectors (#header)</li> <li class="svelte-1tq17n3"><strong>Third column (-0-)</strong>: Classes, attributes, pseudo-classes (.btn, [type="text"], :hover)</li> <li class="svelte-1tq17n3"><strong>Fourth column (-0-0)</strong>: Element selectors and pseudo-elements (div, ::before)</li></ul> <div class="alert alert-info my-4 p-4 bg-light border-start border-primary border-4"><strong>Example:</strong><br/> <code>.button { color: blue; }</code> → 0-0-1-0<br/> <code>#submit { color: red; }</code> → 0-1-0-0<br/> <strong>Wins:</strong> #submit — because 1 ID beats 10,000 classes.</div> <h2 class="svelte-1tq17n3">Why It Matters in Real Projects</h2> <p class="svelte-1tq17n3">Without understanding specificity, developers often resort to <code>!important</code>, overly nested selectors, or endless frustration when styles “don’t work.” This tool was built to help you visualize and debug these conflicts instantly.</p> <h2 class="svelte-1tq17n3">FAQ</h2> <details class="svelte-1tq17n3"><summary class="svelte-1tq17n3">Does :not() increase specificity?</summary> <p class="svelte-1tq17n3">No. The content inside :not() is counted, but :not() itself adds nothing.</p></details> <details class="svelte-1tq17n3"><summary class="svelte-1tq17n3">What about :is() and :where()?</summary> <p class="svelte-1tq17n3">:is() uses the highest specificity of its arguments. :where() always has zero specificity.</p></details> <details class="svelte-1tq17n3"><summary class="svelte-1tq17n3">Can I ever “reset” specificity?</summary> <p class="svelte-1tq17n3">Yes — use :where() or the universal selector * to write low-specificity reusable styles.</p></details> <p class="italic-note svelte-1tq17n3">Master specificity once, and you’ll write cleaner, more maintainable CSS forever.</p></article></div><!----><!--]--></main> <footer class="releative glass border-top py-3 mt-auto" style="z-index: 1030;"><div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center small text-muted"><span>© 2025 AxelBase Selector Specificity Calculator</span> <div class="d-flex gap-3 mt-1 mt-sm-0"><a href="../../privacy" class="text-reset text-decoration-none hover-underline svelte-12qhfyh">Privacy</a> <span>|</span> <a href="../../terms" class="text-reset text-decoration-none hover-underline svelte-12qhfyh">Terms</a></div></div></footer></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_duva4x = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/selector-specificity-calculator"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.Yl2QAhbn.js"),
+						import("../../_app/immutable/entry/app.DThV7cAe.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
